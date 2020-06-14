@@ -7,7 +7,9 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function generate() {
-  let complexity = document.getElementById("password").value;
+
+ let complexity = prompt("How many characters would you like your password to be? Enter a value between 8 and 128.")
+ console.log("length selected", complexity)
 
   //possible values
   let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+"
@@ -28,3 +30,7 @@ function generate() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+//live server 
+
+//prompts or confirms for different category of characters
