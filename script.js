@@ -3,14 +3,16 @@
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-
+var charType = window.prompt("Would you like to include upper case?");
 
 // Write password to the #password input
 function generate() {
 
  let complexity = prompt("How many characters would you like your password to be? Enter a value between 8 and 128.")
- console.log("length selected", complexity)
+ console.log("length selected", complexity);
 
+
+   
   //possible values
   let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+"
 
@@ -32,5 +34,3 @@ function generate() {
 generateBtn.addEventListener("click", writePassword);
 
 //live server 
-
-//prompts or confirms for different category of characters
